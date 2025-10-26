@@ -1,7 +1,11 @@
+// import { Link } from "lucide-react";
+import { Link } from "react-router-dom";
+
 "use client";
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+// import { link } from "fs";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +20,12 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Portfolio", href: "/portfolio" },
+    { label: "Testimonials", href: "/testimonials" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -51,15 +55,15 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={item.href}
+                to={item.href}
                 className="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200 relative group"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-cyan-500 transition-all duration-200 group-hover:w-full"></span>
-              </a>
+              </Link>
             ))}
           </nav>
 

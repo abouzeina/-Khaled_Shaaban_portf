@@ -1,12 +1,7 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "framework": null,
-  "builds": [
-    { "src": "server.js", "use": "@vercel/node" },
-    { "src": "build/client/**", "use": "@vercel/static" }
-  ],
+  "builds": [{ "src": "vite.config.js", "use": "@vercel/static-build" }],
   "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/" }
   ]
 }

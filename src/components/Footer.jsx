@@ -1,4 +1,5 @@
 import { Heart, Github, Linkedin, Twitter, Instagram, Mail,} from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const socialLinks = [
@@ -30,11 +31,12 @@ export default function Footer() {
   ];
 
   const quickLinks = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" }
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Portfolio", href: "/portfolio" },
+    { label: "Testimonials", href: "/testimonials" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -102,13 +104,13 @@ Freelance Graphic Designer | Branding & Visual Identities & Social Media Design 
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href}
+                  <Link 
+                    to={link.href}
                     className="text-gray-300 hover:text-white transition-colors duration-200 text-sm"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
