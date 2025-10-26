@@ -1,0 +1,31 @@
+# System files
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor settings
+.vscode/
+.idea/
+
+# React Router (temporary or dev files)
+.react-router/
+
+# Cache
+.cache/
