@@ -117,10 +117,10 @@ Freelance Graphic Designer | Branding & Visual Identities & Social Media Design 
               </button>
               </a>
               
-                 <a href="" download>
+                 <a href="https://drive.google.com/file/d/1TzI1L_pN7_N-on3eNiP70Eb9feL_BUat/view?usp=sharing" target="_blanck">
                                 <button className="px-8 py-4 rounded-full border-2 border-gray-300 text-gray-700 font-medium hover:border-purple-500 hover:text-purple-600 transition-all duration-300"
                       style={{ fontFamily: "Inter, sans-serif" }}>
-                Download Resume
+                View CV
               </button>
                  </a>
             </div>
