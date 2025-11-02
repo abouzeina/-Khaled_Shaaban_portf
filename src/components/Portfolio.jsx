@@ -42,6 +42,33 @@ export default function Portfolio() {
       liveUrl: "https://www.behance.net/gallery/225808487/-(-)",
       caseStudyUrl: "https://www.behance.net/gallery/225808487/-(-)"
     },
+    {
+      id: 4,
+      title: "FourSW – Social Media Strategy & Design",
+      description: "Comprehensive social media design and content strategy for FourSW, a tech and marketing agency. The project focused on building a consistent visual identity across platforms, highlighting the brand’s expertise in software development, creative design, and digital marketing.",
+      image: "https://i.ibb.co/Lzv99BJF/p5.png",
+      tags: ["Social Media", "Branding ", "Marketing Design"],
+      liveUrl: "https://www.behance.net/gallery/224723765/Social-media-post-designs",
+      caseStudyUrl: "https://www.behance.net/gallery/224723765/Social-media-post-designs"
+    },
+    {
+      id: 5,
+      title: "A+ Computer Store – Social Media Campaign",
+      description: "Creative social media campaign designed and managed for A+ Computer Store under FourSW. The campaign focused on promoting computer accessories and tech products through bold visuals, engaging copy, and a consistent modern aesthetic that strengthened the store’s digital presence.",
+      image: "https://i.ibb.co/zhqHDzdK/p7.jpg",
+      tags: ["Social Media", " Campaign Design", " Digital Marketing"],
+      liveUrl: "https://www.behance.net/gallery/224730271/Social-media-post-designs_2",
+      caseStudyUrl: "https://www.behance.net/gallery/224730271/Social-media-post-designs_2"
+    },
+    {
+      id: 6,
+      title: "QuranMind Academy – Social Media Design",
+      description: "A complete social media design project for QuranMind Academy, focusing on creating inspiring Islamic visuals that blend spirituality with modern design. The campaign aimed to enhance engagement, reflect the academy’s educational values, and maintain a consistent visual identity across platforms.",
+      image: "https://i.ibb.co/svXbvtyG/p2.jpg",
+      tags: ["Social Media", "Islamic Design", "·Visual Identity"],
+      liveUrl: "https://www.behance.net/gallery/224904165/_",
+      caseStudyUrl: "https://www.behance.net/gallery/224904165/_"
+    },
 
   ];
 
@@ -81,13 +108,6 @@ export default function Portfolio() {
             Each project represents a unique challenge and creative solution.
           </p>
 
-                    <div className="inline-block mb-4">
-            <span className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-cyan-100 text-purple-700 text-2xl 
-"
-                  style={{ fontFamily: "Inter, sans-serif" }}>
-              My projects
-            </span>
-          </div>
         </div>
 
         {/* Filter Buttons
@@ -180,6 +200,7 @@ export default function Portfolio() {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
+                
                   <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg border-2 border-gray-200 text-gray-700 font-medium hover:border-purple-500 hover:text-purple-600 transition-colors"
                           style={{ fontFamily: "Inter, sans-serif" }}>
                     <Eye size={16} />

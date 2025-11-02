@@ -65,11 +65,10 @@ export default function Contact() {
   ];
 
   const budgetOptions = [
-    "Under $5,000",
-    "$5,000 - $10,000",
-    "$10,000 - $25,000",
-    "$25,000 - $50,000",
-    "$50,000+"
+    "12,000 EGP",
+    "5,000 EGP",
+    "3,000 EGP",
+
   ];
 
   const projectTypes = [

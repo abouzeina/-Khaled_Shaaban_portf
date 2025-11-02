@@ -78,34 +78,88 @@ export default function About() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {skills.map((skill, index) => {
-            const IconComponent = skill.icon;
-            return (
-              <div 
-                key={index} 
-                className="group p-8 rounded-2xl bg-white border border-gray-100 hover:border-purple-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-purple-100 to-cyan-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent size={24} className="text-purple-600" />
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  {skill.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
-                  {skill.description}
-                </p>
-              </div>
-            );
-          })}
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+  {skills.map((skill, index) => {
+    const IconComponent = skill.icon;
+    return (
+      <div 
+        key={index} 
+        className="group p-8 rounded-2xl bg-white border border-gray-100 hover:border-transparent 
+                  hover:bg-gradient-to-r hover:from-purple-600 hover:to-cyan-500 hover:text-white 
+                  shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-2"
+      >
+        <div className="mb-6">
+          <div 
+            className="w-14 h-14 rounded-xl bg-gradient-to-r from-purple-100 to-cyan-100 
+                        flex items-center justify-center 
+                        transition-all duration-700 ease-out delay-150 
+                        group-hover:bg-white group-hover:shadow-lg"
+          >
+            <IconComponent 
+              size={26} 
+              className="text-purple-600 group-hover:text-purple-700 transition-colors duration-700 ease-out"
+            />
+          </div>
         </div>
+
+        <h3 
+          className="text-xl font-bold text-gray-900 mb-3 transition-colors duration-700 ease-out delay-100 
+                    group-hover:text-white" 
+          style={{ fontFamily: "Inter, sans-serif" }}
+        >
+          {skill.title}
+        </h3>
+
+        <p 
+          className="text-gray-600 leading-relaxed transition-colors duration-700 ease-out delay-150 
+                    group-hover:text-gray-100" 
+          style={{ fontFamily: "Inter, sans-serif" }}
+        >
+          {skill.description}
+        </p>
+      </div>
+    );
+  })}
+</div>
+
+
+
 
         {/* Personal Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Image */}
-          <div className="relative">
+
+                    {/* left: Content */}
+                        <div className="space-y-6">
+                          <h3 className="text-3xl md:text-4xl font-bold text-gray-900" style={{ fontFamily: "Inter, sans-serif" }}>
+                            My Creative Journey
+                          </h3>
+                          <p className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
+              I began my design journey in 2024 with a deep passion for crafting visual stories that connect people with brands. What started as simple logo sketches soon evolved into building full brand identities and digital experiences that inspire trust and recognition.
+
+                          </p>
+                          <p className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
+
+              Through my work with startups, academies, and creative businesses, I’ve learned that design goes far beyond aesthetics — it’s about clarity, purpose, and emotional connection.
+
+              Every project I take on is an opportunity to shape how a brand speaks, feels, and grows — turning creativity into real, lasting impact.
+                          </p>
+
+            {/* Call to Action */}
+            <div className="pt-4">
+              <button className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105"
+                      style={{ fontFamily: "Inter, sans-serif" }}>
+                Let's Work Together
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+          {/* right: Image */}
+          <div className="relative ">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://i.ibb.co/t9WN63B/p0.png"
@@ -129,33 +183,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right: Content */}
-          <div className="space-y-6">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900" style={{ fontFamily: "Inter, sans-serif" }}>
-              My Creative Journey
-            </h3>
-            <p className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
-I began my design journey in 2024 with a deep passion for crafting visual stories that connect people with brands. What started as simple logo sketches soon evolved into building full brand identities and digital experiences that inspire trust and recognition.
 
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
-
-Through my work with startups, academies, and creative businesses, I’ve learned that design goes far beyond aesthetics — it’s about clarity, purpose, and emotional connection.
-
-Every project I take on is an opportunity to shape how a brand speaks, feels, and grows — turning creativity into real, lasting impact.
-            </p>
-
-            {/* Call to Action */}
-            <div className="pt-4">
-              <button className="group inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105"
-                      style={{ fontFamily: "Inter, sans-serif" }}>
-                Let's Work Together
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

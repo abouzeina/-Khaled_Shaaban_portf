@@ -76,7 +76,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 pt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap222 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             {/* Badge */}
@@ -90,14 +90,16 @@ export default function Hero() {
             {/* Main Headline */}
             <div className="space-y-4 ">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                <span className="block text-gray-900">Graphic</span>
-                <span className="block bg-gradient-to-r from-purple-600 via-purple-500 to-cyan-500 bg-clip-text text-transparent p-1">
+                <span className="text-gray-900 mr-3">Graphic</span>
+                <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-cyan-500 bg-clip-text text-transparent p-1">
                   Designer
                 </span>
 
 
               </h1>
             </div>
+
+            
 
             {/* Description */}
             <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -155,7 +157,7 @@ Freelance Graphic Designer | Branding & Visual Identities & Social Media Design 
           </div>
 
           {/* Right Content - Designer Photo */}
-          <div className="relative mb-6">
+          <div className="relative mb-6 ">
             {/* Main Photo Container */}
             <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96">
               {/* Background Circles */}
